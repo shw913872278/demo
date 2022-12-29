@@ -27,6 +27,7 @@ public class IndexController {
         }
         System.out.println("当前登录信息为：login = " + login);
         System.out.println("IDEA分支合并之冲突分支合并体验！");
+        System.out.println("冲突合并之hot-fix。");
         return "";
     }
 
