@@ -27,6 +27,7 @@ public class IndexController {
             session.setAttribute("loginInfo", login);
         }
         System.out.println("当前登录信息为：login = " + login);
+        System.out.println("IDEA分支合并之冲突分支合并");
         return "";
     }
 
