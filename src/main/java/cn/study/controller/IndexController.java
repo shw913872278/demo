@@ -24,6 +24,7 @@ public class IndexController {
 
     @PostMapping("/getUserInfo/{username}")
     public String getUserInfo(@PathVariable String username) {
+        System.out.println("体验一下版本穿梭！！！");
         return userService.userInfo(username);
     }
 }
