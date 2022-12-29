@@ -30,6 +30,7 @@ public class IndexController {
         System.out.println("冲突合并之hot-fix。");
         System.out.println("测试一下push远程");
         System.out.println("github上模拟一下团队开发，然后pull");
+        System.out.println("pull测试成功了！！！");
         return "";
     }
 
