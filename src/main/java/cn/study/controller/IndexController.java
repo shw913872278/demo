@@ -23,7 +23,6 @@ public class IndexController {
     public String index(HttpSession session) {
         final User login = userService.login(new User());
         if (Objects.nonNull(login)) {
-            //TODO: 这里需要将登录信息存入session中
             session.setAttribute("loginInfo", login);
         }
         System.out.println("当前登录信息为：login = " + login);
