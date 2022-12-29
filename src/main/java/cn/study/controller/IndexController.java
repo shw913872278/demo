@@ -19,6 +19,7 @@ public class IndexController {
     @GetMapping({"/", "/index"})
     public String index() {
         final User login = userService.login(new User());
+        System.out.println("当前登录信息为：login = " + login);
         return "";
     }
 
