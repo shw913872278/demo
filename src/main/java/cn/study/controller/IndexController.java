@@ -1,5 +1,6 @@
 package cn.study.controller;
 
+import cn.study.entity.User;
 import cn.study.service.IUserService;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -15,6 +16,7 @@ public class IndexController {
 
     @GetMapping({"/", "/index"})
     public String index() {
+        final User login = userService.login(new User());
         return "";
     }
 }
