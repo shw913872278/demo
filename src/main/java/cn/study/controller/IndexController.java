@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class IndexController {
-    private IUserService userService;
+    private final IUserService userService;
 
     public IndexController(@Qualifier("userService") IUserService userService) {
         this.userService = userService;
