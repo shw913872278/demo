@@ -10,4 +10,9 @@ public class UserService implements IUserService {
     public User login(User loginUser) {
         return new User();
     }
+
+    @Override
+    public String userInfo(String username) {
+        return null;
+    }
 }
